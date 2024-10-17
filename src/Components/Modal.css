@@ -1,0 +1,80 @@
+html {
+  height: 100%; /* Ensure the html element takes full height */
+}
+
+body {
+  margin: 0; /* Remove default body margin */
+  height: 100%; /* Ensure the body takes full height */
+}
+
+#container {
+  width: 800px; /* Fixed width */
+  height: 600px; /* Fixed height */
+  background-color: blue; /* For visibility */
+  overflow: hidden; /* Prevent overflow */
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  box-sizing: border-box; /* Include padding in dimensions */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  box-sizing: border-box; /* Include padding in dimensions */
+  overflow-y: auto; /* Vertical scrolling if needed */
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar-brand h3 {
+  margin: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
